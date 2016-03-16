@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<p> Displaying all <b>Courses</b> </p>
+
+<hr>
+
+{% for course in course_list %}
+
+    <p> Course ID : {{ course.pk  }} <b>~~~</b> Name : {{ course }} </p>
+
+{%  endfor  %}
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<p> Displaying all <b>Students</b></p>
+
+<hr>
+
+{% for student in student_list %}
+
+    <p> Student ID : {{ student.pk  }} <b>~~~</b> Name : {{ student }} </p>
+
+{%  endfor  %}
+
+</body>
+</html>

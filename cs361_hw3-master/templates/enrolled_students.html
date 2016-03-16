@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<p> You enrolled Student <b>{{ student }}</b> into Course <b>{{ course }}</b>.</p>
+
+<hr>
+
+<p> Displaying <b>Students</b> in <b>{{ course }}</b></p>
+
+<hr>
+
+{% for student in enrolled_students %}
+
+    <p> Student ID : {{ student.pk  }} <b>~~~</b> Name : {{ student }} </p>
+
+{%  endfor  %}
+
+</body>
+</html>

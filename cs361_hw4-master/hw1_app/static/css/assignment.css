@@ -1,0 +1,31 @@
+input[type=text],  input[type=email] {
+
+  -webkit-appearance: none;
+  border-radius: 7px;
+  border-style: solid;
+  border-color: #999;
+  border-width: 1px;
+
+}
+
+.selectmultiple {
+
+  -webkit-appearance: none;
+  background: transparent;
+  padding: 5px;
+  font-size: 13px;
+  border-radius: 7px;
+  width:150px;
+  border-style: solid;
+  border-width: 3px;
+  border-right-width: 0px;
+  border-color: #999;
+
+ }
+
+ .select { 
+
+  border-radius: 10px;
+  border-color: #999;
+
+ }

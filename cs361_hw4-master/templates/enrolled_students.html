@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="alert alert-info" role="alert">
+    <i class="fa fa-chevron-right"></i>
+    You enrolled student <b>{{ student }}</b> into course named <b>{{ course }}</b>.
+</div>
+
+<div class="alert alert-info" role="alert">
+    <i class="fa fa-chevron-right"></i>
+    Displaying all enrolled students in <b>{{ course }}</b></p>
+</div>
+
+<table class="table table-bordered table-striped">
+
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>ID</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+
+    <tbody>
+    {% for student in enrolled_students %}
+      <tr>
+        <td> {{ forloop.counter }} </td>
+        <td> {{ student.pk }} </td>
+        <td> <b> {{ student }}  </b> </td>
+      </tr>
+    {%  endfor  %}
+    </tbody>
+
+</table>
+
+{% endblock %}

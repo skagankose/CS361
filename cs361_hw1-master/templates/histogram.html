@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p><b>Words:</b></p>
+
+{% for key in histogram %}
+<p>{{ key }}, {{ histogram|get_value:key }}</p>
+{% endfor %}
+
+</body>
+</html>

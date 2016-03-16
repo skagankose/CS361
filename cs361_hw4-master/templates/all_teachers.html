@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="alert alert-info" role="alert">
+    <i class="fa fa-chevron-right"></i> Displaying all <strong>Teachers</strong>
+</div>
+
+<table class="table table-bordered table-striped">
+
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>ID</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+
+    <tbody>
+    {% for teacher in teacher_list %}
+      <tr>
+        <td> {{ forloop.counter }} </td>
+        <td> {{ teacher.pk }} </td>
+        <td> <b> {{ teacher }}  </b> </td>
+      </tr>
+    {%  endfor  %}
+    </tbody>
+
+</table>
+
+{% endblock %}
